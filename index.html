@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>I'm Sorry</title>
+  <style>
+    body {
+      background-color: #fce4ec;
+      font-family: 'Comic Sans MS', cursive;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .card {
+      background-color: white;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+      text-align: center;
+      max-width: 300px;
+    }
+    .heart {
+      font-size: 50px;
+      animation: heartbeat 1s infinite;
+    }
+    @keyframes heartbeat {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.3); }
+      100% { transform: scale(1); }
+    }
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 10px;
+      background-color: #ff4081;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #f50057;
+    }
+    img {
+      width: 100px;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img src="https://media.giphy.com/media/YOvMWET5QFJk/giphy.gif" alt="Cute Sorry">
+    <h2>I'm really sorry...</h2>
+    <p>Main jaanta hoon ki maine tumhe hurt kiya...</p>
+    <p>Par meri feelings sachchi hain</p>
+    <div class="heart">❤️</div>
+    <button onclick="alert('Thank you for forgiving me! Love you always!')">Click to Forgive</button>
+  </div>
+</body>
+</html>
